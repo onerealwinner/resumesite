@@ -13,6 +13,7 @@ import Bloglist from "./pages/Bloglist";
 import BlogDetails from "./pages/BlogDetails";
 import "./App.scss";
 
+// This is a just a change to trigger a build
 function App() {
   return (
     <BrowserRouter>
