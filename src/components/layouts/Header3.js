@@ -26,7 +26,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
     >
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <Logo logoSource={logoSource} bootstrapNav={bootstrapNav} />
+          {/* TODO: <Logo logoSource={logoSource} bootstrapNav={bootstrapNav} /> */}
           <button
             aria-controls="navbarNavDropdown"
             aria-expanded="false"

@@ -71,7 +71,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
                 smooth={true}
                 duration={500}
               >
-                <i className="icon-briefcase"></i>Services
+                <i className="icon-briefcase"></i>Services 123
               </Link>
             </li>
             <li>
@@ -123,7 +123,7 @@ function Header({ light, logoSource, toggleMenu, headerToggler }) {
 
         <div className="footer">
           <span className="copyright">
-            &copy; {new Date().getFullYear()} Bolby Template.
+            &copy; {new Date().getFullYear()} Daniel Mudge.
           </span>
         </div>
       </header>

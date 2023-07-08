@@ -2,6 +2,7 @@ import React from "react";
 
 function Service({ service }) {
   const { title, content, icon, color, contentColor } = service;
+
   const hexToRgb = (hex) => {
     const temp = hex
       .replace(
@@ -13,6 +14,8 @@ function Service({ service }) {
       .map((x) => parseInt(x, 16));
     return temp.join(",");
   };
+
+  console.log(icon);
 
   return (
     <div

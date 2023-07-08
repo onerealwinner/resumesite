@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
-import Header from "../components/layouts/Header3";
+import Header3 from "../components/layouts/Header3";
+import Footer from "../components/layouts/Footer";
 import About from "../components/sections/About";
 import Blogs from "../components/sections/Blogs";
 import Brandlogos from "../components/sections/Brandlogos";
@@ -12,65 +13,55 @@ import Pricing from "../components/sections/Pricing";
 import Services from "../components/sections/Services";
 import Testimonials from "../components/sections/Testimonials";
 import Works from "../components/sections/Works";
+import Technologies from "../components/sections/Technologies";
+import Overview from "../components/sections/Overview";
+import Operations from "../components/sections/Operations";
 
-function Homepage() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-
-  const headerToggler = (e) => {
-    e.preventDefault();
-    setToggleMenu(!toggleMenu);
-  };
-
-  document.addEventListener("click", function (e) {
-    if (e.target.closest(".content")) {
-      setToggleMenu(false);
-    }
-  });
-
+function Home() {
   return (
     <>
-      <Header
-        logoSource="/images/logo.svg"
-        toggleMenu={toggleMenu}
-        headerToggler={headerToggler}
-      />
-      <main className={toggleMenu ? "content open" : "content"}>
+      <Header3 logoSource="/images/logo.svg" />
+      <main className="content-3">
         <Element name="section-home">
           <ReactCursorPosition>
             <Herosection />
           </ReactCursorPosition>
         </Element>
+        <Element name="section-overview">
+          <Overview />
+        </Element>
         <Element name="section-about">
           <About />
         </Element>
-        <Element name="section-services">
-          <Services />
+        <Element name="section-technologies">
+          <Technologies />
         </Element>
         <Element name="section-experiences">
           <Experiences />
         </Element>
-        <Element name="section-works">
+        {/* <Element name="section-works">
           <Works />
-        </Element>
-        <Element name="section-pricing">
+        </Element> */}
+        {/* <Element name="section-pricing">
           <Pricing />
-        </Element>
-        <Element name="section-testimoninal">
+        </Element> */}
+        {/* <Element name="section-testimoninal">
           <Testimonials />
-        </Element>
-        <Element name="section-brandlogos">
+        </Element> */}
+        {/* <Element name="section-brandlogos">
           <Brandlogos />
-        </Element>
+        </Element> */}
         <Element name="section-blogs">
           <Blogs />
         </Element>
-        <Element name="section-contact">
+        {/* <Element name="section-contact">
           <Contact />
-        </Element>
+        </Element> */}
         <div className="spacer" data-height="96"></div>
       </main>
+      <Footer />
     </>
   );
 }
 
-export default Homepage;
+export default Home;

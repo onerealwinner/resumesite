@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Homepage from "./pages/Homepage";
 import HomepageLight from "./pages/HomepageLight";
 import HomepageDark from "./pages/HomepageDark";
@@ -13,15 +14,17 @@ import Bloglist from "./pages/Bloglist";
 import BlogDetails from "./pages/BlogDetails";
 import "./App.scss";
 
-// This is a just a change to trigger a build
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact>
-          <Homepage />
+          <Home />
         </Route>
-        <Route path="/dark" exact>
+        <Route path="/index" exact>
+          <Home />
+        </Route>
+        {/* <Route path="/dark" exact>
           <HomepageDark />
         </Route>
         <Route path="/light" exact>
@@ -44,7 +47,7 @@ function App() {
         </Route>
         <Route path="/index-3-dark" exact>
           <Homepage3Dark />
-        </Route>
+        </Route> */}
         <Route path="/blogs" component={Bloglist} exact />
         <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
       </Switch>
