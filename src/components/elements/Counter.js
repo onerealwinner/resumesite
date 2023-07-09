@@ -10,12 +10,12 @@ function Counter({ counterItem, isVisible }) {
     }
     return <CountUp end={count} />;
   };
-  const handleIcon = () => {
-    return "icon " + icon;
-  };
+  // const handleIcon = () => {
+  //   return "icon " + icon;
+  // };
   return (
     <div className="fact-item">
-      <span className={handleIcon()}></span>
+      {icon}
       <div className="details">
         <h3 className="mb-0 mt-0 number">
           <em className="count">{countQuery()}</em>

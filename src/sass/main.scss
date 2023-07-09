@@ -128,6 +128,12 @@ section.home {
   }
 }
 
+.flex-center-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*=================================================================*/
 /*                      PARALLAX SHAPES                              
 /*=================================================================*/
@@ -405,6 +411,11 @@ select.portfolio-filter-mobile {
 /*                      FACTS                              
 /*=================================================================*/
 .fact-item {
+  svg {
+    float:left;
+    margin-right:12px;
+  }
+
   .details {
     margin-left: 60px;
   }

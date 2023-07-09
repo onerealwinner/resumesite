@@ -6,58 +6,61 @@ import Skill from "../elements/Skill";
 import { Link } from "react-scroll";
 import Service from "../elements/Service";
 
+import netImage from "../../images/content/net.png";
+import mssqlImage from "../../images/content/mssql.png";
+import pythonImage from "../../images/content/python.png";
+import reactImage from "../../images/content/react.png";
+import cloudImage from "../../images/content/cloud.png";
+import javascriptImage from "../../images/content/javascript.png";
+
 const servicesData = [
   {
     id: 1,
-    icon: "images/service-1.svg",
+    icon: netImage,
     title: ".NET",
-    content: "12.",
-    color: "#6C6CE5",
+    content: "",
+    color: "#111",
     contentColor: "light",
   },
   {
     id: 2,
-    icon: "images/service-2.svg",
+    icon: mssqlImage,
     title: "MSSQL",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F9D74C",
-    contentColor: "dark",
+    content: "",
+    color: "#111",
+    contentColor: "light",
   },
   {
     id: 3,
-    icon: "images/service-3.svg",
-    title: "Javascript",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F97B8B",
+    icon: javascriptImage,
+    title: "HTML, CSS, JS",
+    content: "",
+    color: "#111",
     contentColor: "light",
   },
 
   {
     id: 4,
-    icon: "images/service-1.svg",
+    icon: cloudImage,
     title: "Cloud",
-    content: "12.",
-    color: "#6C6CE5",
+    content: "",
+    color: "#111",
     contentColor: "light",
   },
   {
     id: 5,
-    icon: "images/service-2.svg",
+    icon: reactImage,
     title: "React",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F9D74C",
-    contentColor: "dark",
+    content: "",
+    color: "#111",
+    contentColor: "light",
   },
   {
     id: 6,
-    icon: "images/service-3.svg",
+    icon: pythonImage,
     title: "Python",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F97B8B",
+    content: "",
+    color: "#111",
     contentColor: "light",
   },
 ];
@@ -69,7 +72,7 @@ function Technologies() {
         <Pagetitle
           title="Technologies"
           subtitle={
-            "What makes me a stand out full stack developer is my understanding and expertise in a wide range of technologies"
+            "What makes me a stand out full stack developer is my expertise in a wide range of technologies and enhanced ability to pick and learn new technologies at lightspeed."
           }
         />
 
@@ -81,8 +84,8 @@ function Technologies() {
           ))}
         </div>
         <div className="mt-5 text-center">
-          Over the years I've worked with many other technologies but these
-          listed here have been in my duties for the greater part of my career.
+          {/* Over my career I've worked with many other technologies, I highlighted
+          these as I find the most enjoyment out of this stack. */}
           {/* <p className="mb-0">
             Looking for a custom job?{" "}
             <Link

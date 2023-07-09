@@ -4,11 +4,23 @@ import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
 import GolfCourseImg from "../../images/content/golfCourse3.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFire,
+  faStar,
+  faCoffee,
+  faProjectDiagram,
+} from "@fortawesome/free-solid-svg-icons";
+
+const fireIcon = <FontAwesomeIcon icon={faFire} size="3x" beat />;
+const coffeeIcon = <FontAwesomeIcon icon={faCoffee} size="3x" shake />;
+const peopleIcon = <FontAwesomeIcon icon={faProjectDiagram} size="3x" bounce />;
+const badgeIcon = <FontAwesomeIcon icon={faStar} size="3x" spin spinReverse />;
 
 const aboutContent = {
   name: "Daniel Mudge",
   avatarImage: "/images/avatar-2.svg",
-  content: "Why do I have content here?",
+  content: "Golf",
 };
 
 const progressData = [
@@ -37,25 +49,25 @@ const counterData = [
     id: 1,
     title: "Problems Solved",
     count: 4416,
-    icon: "icon-fire",
+    icon: fireIcon,
   },
   {
     id: 2,
     title: "Cup of coffee",
     count: 4416 * 3,
-    icon: "icon-cup",
+    icon: coffeeIcon,
   },
   {
     id: 3,
     title: "Projects completed",
     count: 627,
-    icon: "icon-people",
+    icon: peopleIcon,
   },
   {
     id: 4,
     title: "Gold stars",
     count: 3319,
-    icon: "icon-badge",
+    icon: badgeIcon,
   },
 ];
 
@@ -65,7 +77,7 @@ function About() {
       <div className="container">
         <Pagetitle title="About Me" />
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 flex-center-content-container">
             <div className="text-center text-md-left text-center media wow zoomIn">
               <img
                 src={GolfCourseImg}
@@ -80,6 +92,45 @@ function About() {
               <div className="row">
                 <div className="col-md-12">
                   <p>
+                    I am passionately committed to crafting trailblazing
+                    solutions for the most complex of challenges. My insatiable
+                    curiosity kindles an environment of non-conventional
+                    thinking and constant innovation. I derive genuine joy from
+                    building bridges within teams, closing operational gaps, and
+                    discovering hidden potentials. My deep-seated love for
+                    learning, paired with my nimbleness in absorbing and
+                    adapting to new concepts and technologies, ensures that I
+                    stay on the cutting edge of our industry's dynamic
+                    evolution.
+                  </p>
+                  <p>
+                    My unwavering work ethic, concentrated on achieving the
+                    day's objectives, is powered by a rich sense of fulfillment.
+                    This is intimately linked to creating technology-driven
+                    solutions, spanning from all-encompassing implementations
+                    and integrations to offering unrivaled support and training.
+                    In every endeavor, I pledge to deliver my best, steering our
+                    course towards optimal results.
+                  </p>
+                  {/* <p>
+                    Among my team, the prevalent sentiment is one of profound
+                    appreciation for my contributions. My positivity and unique
+                    sense of humor infuse our workspace with a lively and
+                    engaging atmosphere. Embracing tasks others may find
+                    intimidating, I demonstrate open-mindedness and superior
+                    communication skills, fostering a spirit of daring and
+                    determination.
+                  </p> */}
+                  <p>
+                    As a reliable ally for colleagues grappling with challenges,
+                    my attentive listening and insightful troubleshooting ensure
+                    we navigate towards successful outcomes. This potent blend
+                    of empathetic leadership traits makes me an inspiring force
+                    within our organization, cultivating an environment where
+                    everyone feels valued, empowered, and driven towards our
+                    shared mission.
+                  </p>
+                  {/* <p>
                     I love developing innovative solutions for challenging
                     problems. I am generally curious about everything and thrive
                     in environments where I can think outside of the box. I
@@ -105,7 +156,7 @@ function About() {
                     colleague is facing an issue, I am one of the go-to guys to
                     call. By listening and providing some insights a great
                     outcome is inevitable.
-                  </p>
+                  </p> */}
 
                   {/* <div className="mt-3">
                     <a href="!#" className="btn btn-default">

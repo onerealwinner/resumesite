@@ -17,6 +17,25 @@ import workEthicImage from "../../images/content/workEthic.png";
 
 const overViewSkills = [
   {
+    id: 2,
+    icon: communicationImage,
+    title: "Communication",
+    content:
+      "I diligently engage in active listening, welcome constructive criticism, and demonstrate proficiency in both oral and written communication.",
+    // "I practice active listening, receiving contructive feedback, verbal communication, written communication",
+    color: "#1e1e1e",
+    contentColor: "light",
+  },
+  {
+    id: 3,
+    icon: adaptabilityImage,
+    title: "Adaptability",
+    content:
+      "I am curious and have an insasiable drive to learn.  I throughly enjoy learning, mostly through experimentation and reading.",
+    color: "#1e1e1e",
+    contentColor: "light",
+  },
+  {
     id: 1,
     icon: problemSolvingImage,
     title: "Problem Solver",
@@ -26,29 +45,11 @@ const overViewSkills = [
     contentColor: "light",
   },
   {
-    id: 2,
-    icon: communicationImage,
-    title: "Communication",
-    content:
-      "I practice active listening, receiving contructive feedback, verbal communication, written communication",
-    color: "#1e1e1e",
-    contentColor: "light",
-  },
-  {
-    id: 3,
-    icon: adaptabilityImage,
-    title: "Adaptability",
-    content:
-      "I am curious and have an insasiable drive to learn.  I throughly enjoy learning, mostly through experimentation, tutorials and reading.",
-    color: "#1e1e1e",
-    contentColor: "light",
-  },
-  {
     id: 4,
     icon: leadershipImage,
     title: "Leadership",
     content:
-      "I strive to be a peer that can be looked up upon as an outstanding teammate.  I work for my peers to make sure we all can succeed.",
+      "I am dedicated to embodying an exemplary figure within our team.  I work for my peers to make sure we all can succeed.",
     color: "#1e1e1e",
     contentColor: "light",
   },
@@ -57,7 +58,7 @@ const overViewSkills = [
     icon: teamworkImage,
     title: "Teamwork",
     content:
-      "I keep my vision aligned with the goal, focus on the positive and connect with the right people to accomplish a lot.",
+      "I harmonize my strategy with the teams our objectives, fostering positive outcomes and key relationships for goal attainment.",
     color: "#1e1e1e",
     contentColor: "light",
   },
@@ -66,7 +67,8 @@ const overViewSkills = [
     icon: workEthicImage,
     title: "Work Ethic",
     content:
-      "Responsibility and dependability are stand out characteritics.  I strive to maintain professionalism  ",
+      // "I am deeply committed to excellence in my professional endeavors, persistently aspiring to deliver industry-leading outcomes.",
+      "In every endeavor, I pledge to deliver my best, persistently aspiring to deliver industry-leading outcomes and optimal results.",
     color: "#1e1e1e",
     contentColor: "light",
   },
