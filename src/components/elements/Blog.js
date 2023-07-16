@@ -1,15 +1,11 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
+import { getNospaceTitle } from "../../blogs/blogdata";
 
 function Blog({ blogData }) {
   const { id, category, title, date, author, image, filesource } = blogData;
-  const getNospaceTitle = (filesource) => {
-    let tempArr = filesource.split("/");
-    let fileName = tempArr[tempArr.length - 1];
-    let getName = fileName.slice(0, -3);
-    return getName;
-  };
+
   return (
     <ScrollAnimation
       animateIn="fadeInUp"

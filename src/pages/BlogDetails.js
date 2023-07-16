@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Markdown from "markdown-to-jsx";
 import Disqus from "disqus-react";
-import Header from "../components/layouts/Header";
+import Header from "../components/layouts/Blog-Side-Bar-Header";
 
 function BlogDetails(props) {
   const [content, setContent] = useState("");
@@ -9,7 +9,7 @@ function BlogDetails(props) {
   const blogFile = props.match.params.title;
 
   useEffect(() => {
-    import(`../blogs/${blogFile}.md`)
+    import(`../blogs/${blogFile}.htm`)
       .then((res) => res.default)
       .then((res) => {
         fetch(res)
@@ -18,9 +18,9 @@ function BlogDetails(props) {
       });
   }, [content, blogFile]);
 
-  const disqusShortname = "bolby"; //found in your Disqus.com dashboard
+  const disqusShortname = "danmudge"; //found in your Disqus.com dashboard
   const disqusConfig = {
-    url: "https://jthemes.net/themes/react/bolby", //Homepage link of this site.
+    url: "https://danmudge.disqus.com/embed.js", //Homepage link of this site.
     identifier: blogId,
     title: blogFile,
   };
@@ -53,7 +53,10 @@ function BlogDetails(props) {
         <div className="blog-page-section">
           <div className="container">
             <div className="blog-single shadow-dark p-30">
-              <Markdown>{content}</Markdown>
+              {/* <Markdown>{content}</Markdown> */}
+
+              <div dangerouslySetInnerHTML={{ __html: content }} />
+
               <div className="mi-blog-details-comments mt-30">
                 <Disqus.DiscussionEmbed
                   shortname={disqusShortname}
