@@ -101,7 +101,7 @@ function About() {
                     learning, paired with my nimbleness in absorbing and
                     adapting to new concepts and technologies, ensures that I
                     stay on the cutting edge of our industry's dynamic
-                    evolution.
+                    evolution. All AI content
                   </p>
                   <p>
                     My unwavering work ethic, concentrated on achieving the
