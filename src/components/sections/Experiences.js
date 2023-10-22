@@ -46,13 +46,28 @@ const experienceData = [
     title: "Information Specialist - Aera Energy",
     years: "2013 - 2022",
     content:
-      "Varied responsiblities.  Application Development, support, project management, project team member.  Mostly waterfall and agile. Lead change",
+      "Large list of responsiblities in application support and development. Led several internal applications through the entire software development life cycle working independently or collaborating closely with data architects and business stakeholders",
   },
   {
     id: 3,
-    title: "Web Developer - U.S. Computers",
+    title: "Web Coordinator - U.S. Computers",
     years: "2011 - 2013",
-    content: "Web developer.  Interfaced with ",
+    content:
+      "Support intranet and varied web applications.  Developed a time tracking application for US Computers.",
+  },
+  {
+    id: 4,
+    title: "Consulting and side projects",
+    years: "2011 - 2023",
+    content:
+      "I began doing consulting work and working on various side projects in 2011.  I've done various websites and web applications for small businesses.",
+  },
+  {
+    id: 5,
+    title: "IT Guy",
+    years: "1996 - 2011",
+    content:
+      "I started my career in IT at a very young age in small town, thanks to the ingenuity of my father, who started a small computer service and consulting business.  In my early career I worked mostly as developer, support and sole IT guy for small businesses in the area.",
   },
 ];
 

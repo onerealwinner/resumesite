@@ -20,6 +20,8 @@ import {
   GiBrainDump,
 } from "react-icons/gi";
 
+import ResumeDownload from "../../docs/resume.pdf";
+
 function Herosection(props) {
   const { x, y } = props.position;
   const { height, width } = props.elementDimensions;
@@ -105,15 +107,19 @@ function Herosection(props) {
           </ul> */}
 
           <div className="mt-4">
-            <Link
+            <a className="btn btn-default" href={ResumeDownload}>
+              Resume
+            </a>
+            {/* <Link
               className="btn btn-default"
               to="section-contact"
               spy={true}
               smooth={true}
               duration={500}
+              to=""
             >
               Resume
-            </Link>
+            </Link> */}
           </div>
         </div>
 

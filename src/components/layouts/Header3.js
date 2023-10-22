@@ -64,6 +64,18 @@ function Header3({ light, logoSource, bootstrapNav }) {
                 <Link
                   activeClass="active"
                   className="nav-link"
+                  to="section-overview"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Overview
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
                   to="section-about"
                   spy={true}
                   smooth={true}
@@ -76,12 +88,12 @@ function Header3({ light, logoSource, bootstrapNav }) {
                 <Link
                   activeClass="active"
                   className="nav-link"
-                  to="section-services"
+                  to="section-technologies"
                   spy={true}
                   smooth={true}
                   duration={500}
                 >
-                  Service
+                  Technologies
                 </Link>
               </li>
               <li className="nav-item">
@@ -96,7 +108,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
                   Experience
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   activeClass="active"
                   className="nav-link"
@@ -107,8 +119,8 @@ function Header3({ light, logoSource, bootstrapNav }) {
                 >
                   Works
                 </Link>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <Link
                   activeClass="active"
                   className="nav-link"
@@ -119,8 +131,8 @@ function Header3({ light, logoSource, bootstrapNav }) {
                 >
                   Blog
                 </Link>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <Link
                   activeClass="active"
                   className="nav-link"
@@ -131,7 +143,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
                 >
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

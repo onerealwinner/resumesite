@@ -17,6 +17,9 @@ import Technologies from "../components/sections/Technologies";
 import Overview from "../components/sections/Overview";
 import Operations from "../components/sections/Operations";
 
+import sectionBg from "../images/content/section-bg.jpg";
+import { Parallax, Background } from "react-parallax";
+
 function Home() {
   return (
     <>
@@ -33,9 +36,19 @@ function Home() {
         <Element name="section-about">
           <About />
         </Element>
-        <Element name="section-technologies">
-          <Technologies />
-        </Element>
+
+        <Parallax
+          blur={{ min: -5, max: 5 }}
+          bgImage={sectionBg}
+          bgImageAlt="starry night"
+          strength={600}
+          bgImageStyle={{ opacity: ".90" }}
+        >
+          <Element name="section-technologies">
+            <Technologies />
+          </Element>
+        </Parallax>
+
         <Element name="section-experiences">
           <Experiences />
         </Element>
@@ -51,9 +64,9 @@ function Home() {
         {/* <Element name="section-brandlogos">
           <Brandlogos />
         </Element> */}
-        <Element name="section-blogs">
+        {/* <Element name="section-blogs">
           <Blogs />
-        </Element>
+        </Element> */}
         {/* <Element name="section-contact">
           <Contact />
         </Element> */}

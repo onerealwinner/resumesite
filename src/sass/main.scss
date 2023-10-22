@@ -32,8 +32,15 @@ main.content-2 {
 main.content-3 {
 }
 
+#technologies {
+  .section-title,.section-subtitle {
+    color:#fff;
+  }
+}
+
 section {
-  padding-top: 110px;
+  padding-top: 75px;
+  padding-bottom: 35px;
   position: relative;
 }
 

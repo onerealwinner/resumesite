@@ -7,11 +7,11 @@ import { Link } from "react-scroll";
 import Service from "../elements/Service";
 
 import netImage from "../../images/content/net.png";
-import mssqlImage from "../../images/content/mssql.png";
-import pythonImage from "../../images/content/python.png";
-import reactImage from "../../images/content/react.png";
-import cloudImage from "../../images/content/cloud.png";
-import javascriptImage from "../../images/content/javascript.png";
+import mssqlImage from "../../images/content/microsoft-sql-server-logo-256.png";
+import pythonImage from "../../images/content/python-logo-256.png";
+import reactImage from "../../images/content/react-logo-256.png";
+import cloudImage from "../../images/content/microsoft-azure-logo-256.png";
+import javascriptImage from "../../images/content/html-css-js-256.png";
 
 const servicesData = [
   {
@@ -19,24 +19,24 @@ const servicesData = [
     icon: netImage,
     title: ".NET",
     content: "",
-    color: "#111",
-    contentColor: "light",
+    color: "#fff",
+    contentColor: "dark",
   },
   {
     id: 2,
     icon: mssqlImage,
     title: "MSSQL",
     content: "",
-    color: "#111",
-    contentColor: "light",
+    color: "#fff",
+    contentColor: "dark",
   },
   {
     id: 3,
     icon: javascriptImage,
     title: "HTML, CSS, JS",
     content: "",
-    color: "#111",
-    contentColor: "light",
+    color: "#fff",
+    contentColor: "dark",
   },
 
   {
@@ -44,24 +44,24 @@ const servicesData = [
     icon: cloudImage,
     title: "Cloud",
     content: "",
-    color: "#111",
-    contentColor: "light",
+    color: "#fff",
+    contentColor: "dark",
   },
   {
     id: 5,
     icon: reactImage,
     title: "React",
     content: "",
-    color: "#111",
-    contentColor: "light",
+    color: "#fff",
+    contentColor: "dark",
   },
   {
     id: 6,
     icon: pythonImage,
     title: "Python",
     content: "",
-    color: "#111",
-    contentColor: "light",
+    color: "#fff",
+    contentColor: "dark",
   },
 ];
 
