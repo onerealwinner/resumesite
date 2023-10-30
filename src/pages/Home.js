@@ -19,6 +19,7 @@ import Operations from "../components/sections/Operations";
 
 import sectionBg from "../images/content/section-bg.jpg";
 import { Parallax, Background } from "react-parallax";
+import Projects from "../components/sections/Projects";
 
 function Home() {
   return (
@@ -52,9 +53,11 @@ function Home() {
         <Element name="section-experiences">
           <Experiences />
         </Element>
-        {/* <Element name="section-works">
-          <Works />
-        </Element> */}
+
+        <Element name="section-projects">
+          <Projects />
+        </Element>
+
         {/* <Element name="section-pricing">
           <Pricing />
         </Element> */}

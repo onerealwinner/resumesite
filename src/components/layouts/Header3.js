@@ -108,6 +108,18 @@ function Header3({ light, logoSource, bootstrapNav }) {
                   Experience
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  className="nav-link"
+                  to="section-projects"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Projects
+                </Link>
+              </li>
               {/* <li className="nav-item">
                 <Link
                   activeClass="active"

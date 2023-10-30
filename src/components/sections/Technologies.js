@@ -72,7 +72,7 @@ function Technologies() {
         <Pagetitle
           title="Technologies"
           subtitle={
-            "What makes me a stand out full stack developer is my expertise in a wide range of technologies and enhanced ability to pick and learn new technologies at lightspeed."
+            "What makes me a stand out full stack developer is my expertise in a wide range of technologies and enhanced ability to pick and learn new technologies at lightspeed.  Listed are a few of my favorites"
           }
         />
 
