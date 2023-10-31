@@ -9,19 +9,17 @@ import Portfolio from "../elements/Portfolio";
 import { ImBooks } from "react-icons/im";
 import Quote from "../elements/Quote";
 
-import problemSolvingImage from "../../images/content/problem-solving.png";
-import communicationImage from "../../images/content/communication.png";
-import adaptabilityImage from "../../images/content/adaptability.png";
-import leadershipImage from "../../images/content/leadership.png";
-import teamworkImage from "../../images/content/teamwork.png";
-import workEthicImage from "../../images/content/workEthic.png";
+import AISiteImage from "../../images/content/AISite.jpg";
+import SiderImage from "../../images/content/Sider.jpg";
+import SiderMarketingImage from "../../images/content/SiderMarketing.jpg";
+import OilWellImage from "../../images/content/SiderMarketing.jpg";
 
 // function Portfolio({ portfolio }) {
 //     const { category, title, image, popupLink, link } = portfolio;
 const projectsList = [
   {
     id: 2,
-    image: communicationImage,
+    image: SiderImage,
     title: "Sider",
     link: "https://siderapp.com",
     content:
@@ -31,7 +29,7 @@ const projectsList = [
   },
   {
     id: 3,
-    image: adaptabilityImage,
+    image: SiderMarketingImage,
     title: "Sider Marketing",
     link: "https://web.siderapp.com/",
     content: "The marketing site for Sider",
@@ -40,7 +38,7 @@ const projectsList = [
   },
   {
     id: 1,
-    image: problemSolvingImage,
+    image: AISiteImage,
     title: "AI Experiment",
     link: "https://danmudge.streamlit.app/",
     content: "A school project I put together in python using streamlit",
@@ -49,7 +47,7 @@ const projectsList = [
   },
   {
     id: 4,
-    image: leadershipImage,
+    image: OilWellImage,
     title: "Oilwell dispatching",
     content:
       "An application I built in MVC for a local oil company to dispatch work and track employee time.",
