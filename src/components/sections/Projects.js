@@ -6,13 +6,12 @@ import Skill from "../elements/Skill";
 import { Link } from "react-scroll";
 import Service from "../elements/Service";
 import Portfolio from "../elements/Portfolio";
-import { ImBooks } from "react-icons/im";
 import Quote from "../elements/Quote";
 
 import AISiteImage from "../../images/content/AISite.jpg";
 import SiderImage from "../../images/content/Sider.jpg";
 import SiderMarketingImage from "../../images/content/SiderMarketing.jpg";
-import OilWellImage from "../../images/content/SiderMarketing.jpg";
+import OilWellImage from "../../images/content/oil-well-solid.svg";
 
 // function Portfolio({ portfolio }) {
 //     const { category, title, image, popupLink, link } = portfolio;
@@ -22,8 +21,7 @@ const projectsList = [
     image: SiderImage,
     title: "Sider",
     link: "https://siderapp.com",
-    content:
-      "In 2023, my brothers and I launched Sider.  A community-based digital marketplace for local side hustles and services.",
+    content: "In 2023, my brothers and I launched Sider.",
     color: "#1e1e1e",
     contentColor: "light",
   },
@@ -50,7 +48,7 @@ const projectsList = [
     image: OilWellImage,
     title: "Oilwell dispatching",
     content:
-      "An application I built in MVC for a local oil company to dispatch work and track employee time.",
+      "An MVC app for a local oil company to dispatch work and track employee time.",
     color: "#1e1e1e",
     contentColor: "light",
   },
