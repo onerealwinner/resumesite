@@ -11,6 +11,7 @@ const quotes = [
   "'The more that you read, the more things you will know, the more that you learn, the more places you'll go.' — Dr. Seuss",
   "'Don't let schooling interfere with your education' - Mark Twain",
   "'If it is too hard, you are probably doing it wrong' - Dan Mudge",
+  "'What I can do, is not as important as WHY I do it or HOW I get it done.' - Dan Mudge",
 ];
 
 const getQuote = () => {
